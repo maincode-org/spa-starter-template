@@ -40,7 +40,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "npx eslint src",
+    "lint": "npx eslint src --max-warnings 0",
+    "fix": "npx prettier --write . && npx eslint src --fix",
     "prepare": "cd .. && husky install ionic-app/.husky",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
