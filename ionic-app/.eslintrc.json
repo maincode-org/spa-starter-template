@@ -2,10 +2,10 @@
   "parser": "babel-eslint",
   "extends": [
     "eslint:recommended",
-    "eslint-config-prettier",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier"
   ],
   "env": {
     "browser": true,
@@ -22,5 +22,15 @@
         "additionalHooks": "useRecoilCallback"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.js",
+        "src/**/*.jsx",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+      ]
+    }
+  ]
 }
