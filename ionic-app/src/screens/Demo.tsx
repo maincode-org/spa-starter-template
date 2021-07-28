@@ -46,7 +46,7 @@ const Demo: React.FC = () => {
           <IonButton color="primary" fill="outline">Outline</IonButton>
           <IonButton color="primary" fill="clear">Clear</IonButton>
           <IonCheckbox color="primary" />
-          <div style={{width: '200px'}}>
+          <div className="w-20">
               <IonItem>
                   <IonLabel>isActive</IonLabel>
                   <IonCheckbox value="isActive" />
