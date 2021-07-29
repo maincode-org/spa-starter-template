@@ -23,19 +23,51 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './styles/ionic-theme.css';
 
+/** Material UI theming
+ *  Documentation for changing color palette with ThemeProvider https://material-ui.com/customization/palette/.
+ *  Note the default MUI font is Roboto.
+ */
+import { ThemeProvider } from '@material-ui/styles';
+import { createTheme } from '@material-ui/core/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#fb8500',
+    },
+    secondary: {
+      main: '#ffb703',
+    },
+    error: {
+      main: '#eb445a',
+    },
+    warning: {
+      main: '#ffc409',
+    },
+    info: {
+      main: '#219ebc',
+    },
+    success: {
+      main: '#2dd36f',
+    }
+  },
+});
+
 const App: React.FC = () => {
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <IonRouterOutlet id="main">
-            <Route path="/">
-              <Demo />
-            </Route>
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </IonReactRouter>
-    </IonApp>
+      <ThemeProvider theme={theme}>
+        <IonApp>
+          <IonReactRouter>
+            <IonSplitPane contentId="main">
+              <IonRouterOutlet id="main">
+                <Route path="/">
+                  <Demo />
+                </Route>
+              </IonRouterOutlet>
+            </IonSplitPane>
+          </IonReactRouter>
+        </IonApp>
+      </ThemeProvider>
   );
 };
 export default App;
