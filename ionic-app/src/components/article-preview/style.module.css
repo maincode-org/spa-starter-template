@@ -1,0 +1,15 @@
+.container {
+    /* Structure */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+
+    /* Position */
+    padding: 5px 10px 5px 10px;
+
+    /* Looks */
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+}
