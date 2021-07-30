@@ -99,7 +99,6 @@ const Demo: React.FC = () => {
           </IonGrid>
 
           <br/><br/>
-          <h2>Material UI</h2>
           <Button color="primary">MUI Primary</Button>
           <Button color="secondary">MUI Secondary</Button>
 
