@@ -19,7 +19,7 @@ We have three main folders in src:
 
 In components we have React functional components. <br/>
 In screens we have screens or what atomic design would call [pages](https://bradfrost.com/blog/post/atomic-web-design/). Screens will almost always consist mostly of components. <br/>
-In styles we have a global stylesheet, ionic theming and potentially other stylesheets.
+In styles we have a global stylesheets, for example an ionic theming file or our tailwind-like generics stylesheet file.
 
 ## Removal of Material UI
 If you know you are not going to use Material UI and wish to remove the dependency - this is how.
