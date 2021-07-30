@@ -24,7 +24,7 @@ import '@ionic/react/css/display.css';
 import './styles/ionic-theme.css';
 
 /* MUI theme */
-import theme from './mui-theme';
+import theme from './lib/mui-theme';
 import { ThemeProvider } from '@material-ui/styles';
 
 const App: React.FC = () => {
