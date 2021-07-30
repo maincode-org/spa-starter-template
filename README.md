@@ -25,4 +25,3 @@ In styles we have a global stylesheets, for example an ionic theming file or our
 If you know you are not going to use Material UI and wish to remove the dependency - this is how.
 1. Remove the ThemeProvider wrapper component, alongside the import statement in App.tsx.
 2. Remove the theme import in App.tsx and the `/src/lib/mui-theme.ts` file.
-
